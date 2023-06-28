@@ -10,7 +10,7 @@ Running the script can be done by being CDd into its path and calling it with `r
 
 After running the script, `ruby  update_slots.rb`, a text file will be created listing everything that has been changed.
 
-By default, it will look inside Ruby on Rails app locations such as `app/views` and View Component directory `app/components`. If you'd like it to run elsewhere or somewhere more specific, when calling the script, add the folder's path in quotes after the script name: `ruby update_slots.rb "./app/views/devise"`.
+By default, it will look inside Ruby on Rails app locations such as `app/views` and View Component directory `app/components`. If you'd like it to run elsewhere or somewhere more specific, when calling the script, add the folder's path after the script name: `ruby update_slots.rb ./app/views/devise ./app/views/notes`.
 
 ## Types of Slots  
 
