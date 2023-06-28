@@ -20,6 +20,8 @@ The type of slot calls this will automatically update:
 
 2. Slot names without parameters: `dropdown.button do` => `dropdown.with_button do`
 
-3. Slot names with block: `dropdown.button {"Test"}` => `dropdown.with_button {"Test"}`
+3. Slot names without block but with parameters: `dropdown.button(classes: "test")` => `dropdown.with_button(classes: "test")`
 
-4. Old slot names using with: `component.with(:header)` => `component.with_header`
+4. Slot names with block: `dropdown.button {"Test"}` => `dropdown.with_button {"Test"}`
+
+5. Old slot names using with: `component.with(:header)` => `component.with_header`

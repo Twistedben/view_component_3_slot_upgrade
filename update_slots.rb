@@ -44,7 +44,7 @@ dirs.each do |dir|
           elsif data.match(/\s*#{component_name}\.#{slot_name}\s*\{/)
             /\s*#{component_name}\.#{slot_name}(\s*\{.*?\}\s*%>)/
           else
-            /\s*#{component_name}\.#{slot_name}(\s*\(.*?\)\s*do|\s*do|\s*do\s*)/
+            /\s*#{component_name}\.#{slot_name}(\s*\(\s*.*?\)\s*(do)?|\s*do|\s*do\s*)/
           end
           lines = data.split("\n")
           
