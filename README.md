@@ -2,9 +2,9 @@
 
 Per [ViewComponent 3.0 Changelog](https://viewcomponent.org/CHANGELOG.html#v300): BREAKING: Remove deprecated slots setter methods. Use with_SLOT_NAME instead.
 
-A Ruby script for the View Component Gem by Github that updates existing html.erb files that have slot calls inside of them to prepend the prefix "_with" due to the breaking change of slot calling.
+A Ruby script for the [View Component Gem](https://github.com/github/view_component) by Github that updates existing html.erb files that have slot calls inside of them to prepend the prefix "_with" due to the breaking change of slot calling.
 
-Clone the repo and move `update_slots.rb` into your app's directory.
+Clone the repo and move `update_slots.rb` into your app's directory or run it with absolute path.
 
 Running the script can be done by being CDd into its path and calling it with `ruby update_slots.rb`.
 
@@ -36,7 +36,7 @@ The type of slot calls this will automatically update:
       "test"
     }
   )
-  
+
 # After
   component.with_button(
     data: {
