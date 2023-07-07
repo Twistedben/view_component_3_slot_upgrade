@@ -12,7 +12,7 @@ After running the script, `ruby  update_slots.rb`, a text file will be created l
 
 By default, it will look inside Ruby on Rails app locations such as `app/views` and View Component directory `app/components`. If you'd like it to run elsewhere or somewhere more specific, when calling the script, add the folder's path after the script name: `ruby update_slots.rb ./app/views/devise ./app/views/notes`.
 
-Will skip any component name before slot calls that match `f` or `form`, this way `form_with` and other form blocks are skipped. So ahead of time, update any components that you call with `|form|` inside to something like `|component|` or `|form_component|`.
+Will skip any component name before slot calls that match `f` or `form`, this way `form_with` and other form blocks are skipped. So ahead of time, update any components that you call with `|form|` inside to something like `|component|` or `|form_component|`. And also change any form blocks into `form` or `f`.
 ## Types of Slots  
 
 The type of slot calls this will automatically update:
@@ -63,3 +63,7 @@ Running the script will create a text file (`update_slots_output.txt`) in the sa
   Total slot occurrences changed: 357
   Total slot occurrences skipped: 0
 ```
+
+### Disclaimer
+
+I tried to account for many variations and as much as I possibly can, but there is always a chance the script will make a change that it shouldn't or miss a change. So please thoroughly test your website and check git diffs after running it!
