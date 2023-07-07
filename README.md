@@ -45,6 +45,8 @@ The type of slot calls this will automatically update:
   )
 ```
 
+ Will NOT change `form` or `f` variables: `form.input` => `form.input` and `f.input` => `f.input` 
+
 ## Update Slots Output
 
 Running the script will create a text file (`update_slots_output.txt`) in the same directory as the `update_slots.rb` file. This file is a log that tracks  all the slots that were updated and will look like this when finished running:
