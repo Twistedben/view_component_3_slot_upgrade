@@ -30,14 +30,14 @@ The type of slot calls this will automatically update:
 6. Multiline slot names like: 
 
 ```ruby
+# Before
   component.button(
     data: {
       "test"
     }
   )
-```
-
-```ruby
+  
+# After
   component.with_button(
     data: {
       "test"
