@@ -58,6 +58,7 @@ dirs.each do |dir|
           else
             slot_regex = /\s*#{component_name}\.#{slot_name}(\s*(\(\s*.*?\))?\s*(do)?|\s*do|\s*do\s*)/ms
           end
+          slot_regex = Regexp.new(slot_regex.source.force_encoding("UTF-8"))
           lines = data.split("\n")
           
           # For each occurrence of the slot, replace it with "with_" prefix
